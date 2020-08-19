@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Stage from './Stage';
+import {createStage} from '../gameHelpers';
 import Display from './Display';
 import StartButton from './StartButton';
 import {StyledTetrisWrapper, StyledTetris} from './styles/StyledTetris'
@@ -12,6 +13,26 @@ const Tetris = () => {
 
     const [player] = usePlayer();
     const [stage, setStage] = useStage(player);
+
+    const movePlayer = dir => {
+
+    }
+
+    const startGame = () => {
+
+    }
+
+    const drop = () => {
+
+    }
+
+    const dropPlayer = () => {
+
+    }
+
+    const move = ({ keyCode}) => {
+        
+    }
     
     return (
         <StyledTetrisWrapper>
