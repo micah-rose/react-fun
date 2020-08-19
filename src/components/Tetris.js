@@ -31,11 +31,11 @@ const Tetris = () => {
     }
 
     const move = ({ keyCode}) => {
-        
+
     }
     
     return (
-        <StyledTetrisWrapper>
+        <StyledTetrisWrapper role="button" tabIndex="0" onKeyDown={e => move(e)}>
             <StyledTetris>
             <Stage stage={stage}/>
             <aside>
