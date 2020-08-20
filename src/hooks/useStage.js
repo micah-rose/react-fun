@@ -10,7 +10,8 @@ export const useStage = (player, resetPlayer) => {
                 row.map(cell => (cell[1] === 'clear' ? [0, 'clear'] : cell))
             )
 
-            player.tetro.forEach((row, y) => {
+            //Look into fixing this cause it seems to have a limit on how many "moves" you can do.
+            player.tetro.forEach((row, y) => { 
                 row.forEach((value, x) => {
                     if (value !== 0) {
                         newStage[y + player.pos.y][x + player.pos.x] = [
