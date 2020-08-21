@@ -11,13 +11,13 @@ export const useStage = (player, resetPlayer) => {
             )
 
             //Look into fixing this cause it seems to have a limit on how many "moves" you can do.
-            player.tetro.forEach((row, y) => { 
+            player.tetromino.forEach((row, y) => { 
                 row.forEach((value, x) => {
                     if (value !== 0) {
                         newStage[y + player.pos.y][x + player.pos.x] = [
                             value,
                             `${player.collided ? 'merged' : 'clear'}`
-                        ]
+                        ];
                     }
                 })
             })
